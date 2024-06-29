@@ -8,7 +8,7 @@ public class main {
         w = new Ware("01019010", "Hammer", 19.00);
         pos = new Bestellposition(w, 30);
         best.nimmAuf(pos);
-        w = new Ware("01019020", "Zange", 17.00);
+        w = new Ware("01019620", "Zange", 17.00);
         pos = new Bestellposition(w, 20);
         best.nimmAuf(pos);
         best.zeigeAn();

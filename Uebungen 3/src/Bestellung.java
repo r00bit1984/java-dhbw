@@ -25,7 +25,7 @@ public class Bestellung {
         System.out.println("------------------------------------------------------");
         for (int i = 0; i < positionen.length; i++) {
             if (positionen[i] != null) {
-                System.out.printf("%-15s %-15s %-15.2f %-15s\n", positionen[i].ware.nummer, positionen[i].ware.bezeichnung, positionen[i].ware.preis, positionen[i].menge );
+                System.out.printf("%-15s %-15s %-15.2f %-15s\n", positionen[i].ware.getNormalisierteWarenNummer(), positionen[i].ware.bezeichnung, positionen[i].ware.preis, positionen[i].menge );
             }
         }
     }
