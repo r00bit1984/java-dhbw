@@ -15,7 +15,9 @@ public class Bestellung {
 
     public void zeigeAn() {
         for (Bestellposition b : positionen) {
-            System.out.println(b);
+            if (b != null) {
+                System.out.println(b);
+            }
         }
     }
 }

@@ -24,4 +24,9 @@ public class Ware {
     public void setPreis(String nummer) {
         this.nummer = nummer;
     }
+
+    @Override
+    public String toString() {
+        return nummer + " " + bezeichnung + ", " + preis;
+    }
 }

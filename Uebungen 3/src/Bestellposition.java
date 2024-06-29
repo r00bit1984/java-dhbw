@@ -11,4 +11,8 @@ public class Bestellposition {
     public int getMenge() {
         return menge;
     }
+    @Override
+    public String toString() {
+        return ware.toString() + ", " + "Menge: " + menge;
+    }
 }
