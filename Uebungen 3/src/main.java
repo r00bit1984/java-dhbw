@@ -1,6 +1,8 @@
 public class main {
     public static void main(String[] args) {
-        Bestellung best = new Bestellung();
+        Kunde kunde1 = new Kunde("Robert", "Goofy", "2323");
+        kunde1.setBekommtRabatt(true);
+        Bestellung best = new Bestellung(kunde1);
         Bestellposition pos;
         Ware w;
         w = new Ware("01019010", "Hammer", 19.00);

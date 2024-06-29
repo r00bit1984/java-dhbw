@@ -1,7 +1,7 @@
 public class Ware {
-    private String nummer;
-    private final String bezeichnung;
-    private final double preis;
+    public String nummer;
+    public final String bezeichnung;
+    public final double preis;
 
     public Ware(String id, String desc, double price) {
         nummer = id;
