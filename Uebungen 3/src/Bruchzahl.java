@@ -75,18 +75,11 @@ public class Bruchzahl {
     }
 
     public void kuerze() {
-        long ggT = ggT(z, n);
+        long ggT = Algorithmen.ggT(z, n);
         z = z / ggT;
         n = n / ggT;
     }
 
-    public long ggT(long a, long b) {
-        long rest = a % b;
-        if (rest == 0) {
-            return b;
-        } else {
-            return ggT(b, rest);
-        }
-    }
+
 
 }

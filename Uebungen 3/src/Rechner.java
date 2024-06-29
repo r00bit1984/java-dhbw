@@ -14,9 +14,5 @@ public class Rechner {
         System.out.println(zahl6);
         Bruchzahl bruch = new Bruchzahl(0, 4);
         bruch.kuerze();
-        System.out.println(bruch);
-        System.out.println(bruch.ggT(12, 15));
-        bruch.normiere();
-        System.out.println(bruch);
     }
 }

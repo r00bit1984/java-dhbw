@@ -2,9 +2,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Ware {
-    public String nummer;
     public final String bezeichnung;
     public final double preis;
+    public String nummer;
 
     public Ware(String id, String desc, double price) {
         nummer = id;
@@ -28,7 +28,7 @@ public class Ware {
         this.nummer = nummer;
     }
 
-    public String getNormalisierteWarenNummer () {
+    public String getNormalisierteWarenNummer() {
         String input = nummer;
         Pattern pattern = Pattern.compile("^DE-\\d{4}-\\d{4}$");
         /*
@@ -43,11 +43,9 @@ public class Ware {
         Matcher matcher = pattern.matcher(input);
         if (matcher.matches()) {
             return nummer;
-        }
-        else if (nummer.length() == 8){
+        } else if (nummer.length() == 8) {
             return String.format("DE-%s-%s", input.substring(0, 4), input.substring(4));
-        }
-        else {
+        } else {
             throw new IllegalArgumentException("Nummer ist nicht 8 lang");
         }
     }
